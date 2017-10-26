@@ -56,8 +56,14 @@ environment:
         OPENSSL: OFF
         TESTING: ON
         STATICLIB: ON
-      - PRJ_GEN: "Visual Studio 14 2015 Win32"
+      - PRJ_GEN: "Visual Studio 14 2015"
         platform: x86
+        BDIR: msvc2015
+        PRJ_CFG: Release
+        OPENSSL: ON
+        TESTING: OFF
+        STATICLIB: OFF
+      - PRJ_GEN: "Visual Studio 14 2015 ARM"
         BDIR: msvc2015
         PRJ_CFG: Release
         OPENSSL: ON
